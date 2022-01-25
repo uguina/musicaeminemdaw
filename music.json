@@ -115,8 +115,8 @@
     },
     {
         "NombreAlbum":"The Eminem Show",
-        "Año":"",
-        "ImgAlbum":"",
+        "Año":"2002",
+        "ImgAlbum":"disc1.jpg",
         "Canciones":[
             {
                 "id":0,
@@ -125,105 +125,105 @@
             },
             {
                 "id":1,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "White America",
+                "cancion": "02 White America.mp3"
             },
             {
                 "id":2,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Business",
+                "cancion": "03 Business.mp3"
             },
             {
                 "id":3,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Cleanin' Out My Closet",
+                "cancion": "04 Cleanin' Out My Closet.mp3"
             },
             {
                 "id":4,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Square Dance",
+                "cancion": "05 Square Dance.mp3"
             },
             {
                 "id":5,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "The Kiss (Skit)",
+                "cancion": "06 The Kiss (Skit).mp3"
             },
             {
                 "id":6,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Soldier",
+                "cancion": "07 Soldier.mp3"
             },
             {
                 "id":7,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Say Goodbye Hollywood",
+                "cancion": "08 Say Goodbye Hollywood.mp3"
             },
             {
                 "id":8,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Drips",
+                "cancion": "09 Drips.mp3"
             },
             {
                 "id":9,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Without Me",
+                "cancion": "10 Without Me.mp3"
             }
         ]
     },
     {
-        "NombreAlbum":"",
-        "Año":"",
-        "ImgAlbum":"",
+        "NombreAlbum":"The Slim Shady",
+        "Año":"2000",
+        "ImgAlbum":"disc4.jpg",
         "Canciones":[
             {
                 "id":0,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Public Service Announcement",
+                "cancion": "01 Public Service Announcement.mp3"
             },
             {
                 "id":1,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "My Name Is",
+                "cancion": "02 My Name Is.mp3"
             },
             {
                 "id":2,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Guilty Conscience",
+                "cancion": "03 Guilty Conscience.mp3"
             },
             {
                 "id":3,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Brain Damage",
+                "cancion": "04 Brain Damage.mp3"
             },
             {
                 "id":4,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Paul (Skit)",
+                "cancion": "05 Paul (Skit).mp3"
             },
             {
                 "id":5,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "If I Had",
+                "cancion": "06 If I Had.mp3"
             },
             {
                 "id":6,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "'97 Bonnie and Clyde",
+                "cancion": "07 '97 Bonnie and Clyde.mp3"
             },
             {
                 "id":7,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Bitch (Skit)",
+                "cancion": "08 Bitch (Skit).mp3"
             },
             {
                 "id":8,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Role Model",
+                "cancion": "09 Role Model.mp3"
             },
             {
                 "id":9,
-                "titulo": "A Victory of Love",
-                "cancion": "1-Alphaville - A Victory of Love.mp3"
+                "titulo": "Lounge (Skit)",
+                "cancion": "10 Lounge (Skit).mp3"
             }
         ]
     }
