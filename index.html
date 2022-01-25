@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,6 +25,53 @@
       <div class="disc"><img src="img/disc4.jpg" alt=""></div>
     </div>
   </section>
+
+  <div class="contenedor">
+    <div class="player">
+      <div class="player__controls">
+        <div class="player__btn player__btn--small">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <h5 class="player__title">playing now</h5>
+        <div class="player__btn player__btn--small">
+          <i class="fas fa-list"></i>
+        </div>
+      </div>
+
+      <div class="player__album">
+        <img src="img/disc1.jpg" style="width: 30%;" alt="Album Cover" class="player__img">
+      </div>
+
+      <h2 class="player__artist">Disclosure</h2>
+      <h3 class="player__song">Latch</h3>
+      <input type="range" value="20" min="0" class="player__level">
+
+      <div class="audio-duration">
+        <div class="start">00:01</div>
+        <div class="end">04:30</div>
+      </div>
+
+      <audio class="player__audio" controls id="audio">
+        <source src="RUTA CANCION">
+      </audio>
+
+      <div class="player__controls">
+        <div class="player__btn player__btn--medium">
+          <i class="fas fa-backward"></i>
+        </div>
+     
+        <div class="player__btn player__btn--medium blue" id="play">
+          <i class="fas fa-play play-btn"></i>
+          <i class="fas fa-pause pause-btn hide"></i>
+        </div>
+
+        <div class="player__btn player__btn--medium">
+          <i class="fas fa-forward"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
