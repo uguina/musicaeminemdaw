@@ -1,0 +1,17 @@
+.content{
+    background-image: url(../img/bg.jpg);
+    padding: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.discs{
+    display: flex;  
+    .disc{
+        margin-left: 3%;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
