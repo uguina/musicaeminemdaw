@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .content {
   background-image: url(../img/bg.jpg);
   padding: 20%;
@@ -20,7 +19,7 @@
   width: 100%;
   border-radius: 10px;
 }
-=======
+
 body {
   background: #dfe7ef;
   font-family: "Bitter", serif;
@@ -523,5 +522,4 @@ body {
   pointer-events: none;
   opacity: 0;
 }
->>>>>>> bcd7075d6f09734cff0112956ac0711459880f77
 /*# sourceMappingURL=estilos.css.map */
