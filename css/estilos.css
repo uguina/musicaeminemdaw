@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=estilos.css.map */
+body {
+  background: #dfe7ef;
+  font-family: "Bitter", serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content {
+  background-image: url(../img/bg.jpg);
+  padding: 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.discs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.discs .disc {
+  margin-left: 3%;
+}
+
+.discs .disc img {
+  width: 100%;
+  cursor: pointer;
+  background-color: #d0d8e6;
+  display: inline-block;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=estilos.css.map */

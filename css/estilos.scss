@@ -1,0 +1,30 @@
+body {
+  // background: #e1e7ec;
+    background: #dfe7ef;
+  font-family: "Bitter", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content{
+    background-image: url(../img/bg.jpg);
+    padding: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.discs{
+    display: flex;  
+    .disc{
+        margin-left: 3%;
+        img{
+            width: 100%;
+    cursor: pointer;
+    background-color: #d0d8e6;
+    display: inline-block;
+            border-radius: 10px;
+        }
+    }
+}
