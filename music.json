@@ -1,0 +1,231 @@
+[
+    {
+        "NombreAlbum":"Curtain Call",
+        "Año":"2005",
+        "ImgAlbum":"disc3.jpg",
+        "Canciones":[
+            {
+                "id":0,
+                "titulo": "Intro",
+                "cancion": "1-01 Intro (Curtain Call).mp3"
+            },
+            {
+                "id":1,
+                "titulo": "Fack",
+                "cancion": "1-02 Fack.mp3"
+            },
+            {
+                "id":2,
+                "titulo": "The Way I Am",
+                "cancion": "1-03 The Way I Am.mp3"
+            },
+            {
+                "id":3,
+                "titulo": "My Name Is",
+                "cancion": "1-04 My Name Is.mp3"
+            },
+            {
+                "id":4,
+                "titulo": "Stan",
+                "cancion": "1-05 Stan.mp3"
+            },
+            {
+                "id":5,
+                "titulo": "Lose Yourself",
+                "cancion": "1-06 Lose Yourself.mp3"
+            },
+            {
+                "id":6,
+                "titulo": "Shake That",
+                "cancion": "1-07 Shake That.mp3"
+            },
+            {
+                "id":7,
+                "titulo": "Sing for the Moment",
+                "cancion": "1-08 Sing for the Moment.mp3"
+            },
+            {
+                "id":8,
+                "titulo": "Without Me",
+                "cancion": "1-09 Without Me.mp3"
+            },
+            {
+                "id":9,
+                "titulo": "Like Toy Soldiers",
+                "cancion": "1-10 Like Toy Soldiers.mp3"
+            }
+        ]
+    },
+    {
+        "NombreAlbum":"Encore",
+        "Año":"2004",
+        "ImgAlbum":"disc2.jpg",
+        "Canciones":[
+            {
+                "id":0,
+                "titulo": "Curtains Up",
+                "cancion": "1-01 Encore _ Curtains Up.mp3"
+            },
+            {
+                "id":1,
+                "titulo": "Evil Deeds",
+                "cancion": "1-02 Evil Deeds.mp3"
+            },
+            {
+                "id":2,
+                "titulo": "Never Enough",
+                "cancion": "1-03 Never Enough.mp3"
+            },
+            {
+                "id":3,
+                "titulo": "Yellow Brick Road",
+                "cancion": "1-04 Yellow Brick Road 1.mp3"
+            },
+            {
+                "id":4,
+                "titulo": "Like Toy Soldiers",
+                "cancion": "1-05 Like Toy Soldiers 1.mp3"
+            },
+            {
+                "id":5,
+                "titulo": "Mosh",
+                "cancion": "1-06 Mosh 1.mp3"
+            },
+            {
+                "id":6,
+                "titulo": "Puke",
+                "cancion": "1-07 Puke 1.mp3"
+            },
+            {
+                "id":7,
+                "titulo": "My 1st Single",
+                "cancion": "1-08 My 1st Single 1.mp3"
+            },
+            {
+                "id":8,
+                "titulo": "Paul (Skit)",
+                "cancion": "1-09 Paul (Skit) 1.mp3"
+            },
+            {
+                "id":9,
+                "titulo": "Rain Man",
+                "cancion": "1-10 Rain Man 1.mp3"
+            }
+        ]
+    },
+    {
+        "NombreAlbum":"The Eminem Show",
+        "Año":"2002",
+        "ImgAlbum":"disc1.jpg",
+        "Canciones":[
+            {
+                "id":0,
+                "titulo": "Curtains Up",
+                "cancion": "01 Curtains Up (Skit).mp3"
+            },
+            {
+                "id":1,
+                "titulo": "White America",
+                "cancion": "02 White America.mp3"
+            },
+            {
+                "id":2,
+                "titulo": "Business",
+                "cancion": "03 Business.mp3"
+            },
+            {
+                "id":3,
+                "titulo": "Cleanin' Out My Closet",
+                "cancion": "04 Cleanin' Out My Closet.mp3"
+            },
+            {
+                "id":4,
+                "titulo": "Square Dance",
+                "cancion": "05 Square Dance.mp3"
+            },
+            {
+                "id":5,
+                "titulo": "The Kiss (Skit)",
+                "cancion": "06 The Kiss (Skit).mp3"
+            },
+            {
+                "id":6,
+                "titulo": "Soldier",
+                "cancion": "07 Soldier.mp3"
+            },
+            {
+                "id":7,
+                "titulo": "Say Goodbye Hollywood",
+                "cancion": "08 Say Goodbye Hollywood.mp3"
+            },
+            {
+                "id":8,
+                "titulo": "Drips",
+                "cancion": "09 Drips.mp3"
+            },
+            {
+                "id":9,
+                "titulo": "Without Me",
+                "cancion": "10 Without Me.mp3"
+            }
+        ]
+    },
+    {
+        "NombreAlbum":"The Slim Shady",
+        "Año":"2000",
+        "ImgAlbum":"disc4.jpg",
+        "Canciones":[
+            {
+                "id":0,
+                "titulo": "Public Service Announcement",
+                "cancion": "01 Public Service Announcement.mp3"
+            },
+            {
+                "id":1,
+                "titulo": "My Name Is",
+                "cancion": "02 My Name Is.mp3"
+            },
+            {
+                "id":2,
+                "titulo": "Guilty Conscience",
+                "cancion": "03 Guilty Conscience.mp3"
+            },
+            {
+                "id":3,
+                "titulo": "Brain Damage",
+                "cancion": "04 Brain Damage.mp3"
+            },
+            {
+                "id":4,
+                "titulo": "Paul (Skit)",
+                "cancion": "05 Paul (Skit).mp3"
+            },
+            {
+                "id":5,
+                "titulo": "If I Had",
+                "cancion": "06 If I Had.mp3"
+            },
+            {
+                "id":6,
+                "titulo": "'97 Bonnie and Clyde",
+                "cancion": "07 '97 Bonnie and Clyde.mp3"
+            },
+            {
+                "id":7,
+                "titulo": "Bitch (Skit)",
+                "cancion": "08 Bitch (Skit).mp3"
+            },
+            {
+                "id":8,
+                "titulo": "Role Model",
+                "cancion": "09 Role Model.mp3"
+            },
+            {
+                "id":9,
+                "titulo": "Lounge (Skit)",
+                "cancion": "10 Lounge (Skit).mp3"
+            }
+        ]
+    }
+
+]
