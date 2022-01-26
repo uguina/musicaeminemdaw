@@ -1,14 +1,41 @@
-const audio = document.getElementById("audio");
-const playPause = document.getElementById("play");
+$(document).ready(() => {
+  const next = document.querySelector('.fa-forward');
+  const play = document.querySelector('.play-btn');
+  const pause = document.querySelector('.pause-btn');
+  const previous = document.querySelector('.fa-backward');
 
-playPause.addEventListener("click", () => {
-  if (audio.paused || audio.ended) {
-    playPause.querySelector(".pause-btn").classList.toggle("hide");
-    playPause.querySelector(".play-btn").classList.toggle("hide");
-    audio.play();
-  } else {
-    audio.pause();
-    playPause.querySelector(".pause-btn").classList.toggle("hide");
-    playPause.querySelector(".play-btn").classList.toggle("hide");
-  }
+
+  const song = document.querySelector('.player__audio');
+  const title = [];
+  var time;
+
+  //PETICIÓN AJAX
+  // var req = new XMLHttpRequest();
+  // req.open('GET', 'music.json', true);
+  // req.send();
+  // req.onreadystatechange = function () {
+  //   if (req.readyState == 4) {
+  //     if (req.status == 200) {
+  //       let datos = req.responseText;
+  //       canciones = JSON.parse(datos);
+
+  //       canciones.forEach(song => {
+
+  //         let titulo = document.createElement('h3');
+  //         titulo.innerText = song.titulo;
+  //         document.querySelector("#lista-canciones").appendChild(titulo);
+
+  //         titulo.addEventListener("click", () => {
+  //           cargarCancion(song.id);
+  //         })
+
+  //       });
+  //     }
+  //   }
+  //}
+
 });
+
+
+
+
