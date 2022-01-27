@@ -56,6 +56,8 @@ img{
 
 
 // REPRODUCTOR
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
 :root {
   --background: #e0e5ec;
   --gray: #797d7f;
@@ -79,8 +81,8 @@ img{
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  box-shadow: 9px 9px 16px rgba(0, 9, 22, 0.6), 
-  -9px -9px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 
 .player__controls{
@@ -135,6 +137,7 @@ img{
 .player__artist {
   font-size: 1.2em;
   font-weight: 500;
+  opacity: 0.5;
   margin: 20px 0px 0px 0px;
 }
 
@@ -144,6 +147,7 @@ img{
   text-align: center;
   font-weight: 400;
   font-size: 1em;
+  opacity: 0.5;
   margin: 0;
 }
 
@@ -165,7 +169,7 @@ img{
 .player__level::-webkit-slider-thumb {
   -webkit-appearance: none;
   border-radius: 100%;
-  background-color: #071c57;
+  background-color: #5c87fe;
   height: 18px;
   width: 18px;
   margin-top: -7px;
