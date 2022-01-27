@@ -3,9 +3,11 @@ const previous = document.querySelector('#previous');
 const next = document.querySelector('#next');
 const play = document.querySelector('#play').addEventListener('click', reproducir);;
 const pause = document.querySelector('#pause').addEventListener('click', pausar);;
+var titulo = [];
+
 
 window.onload = cargarAjax;
-let canciones = [];
+
 function cargarAjax() {
   cargar();
   var req = new XMLHttpRequest();
@@ -15,19 +17,29 @@ function cargarAjax() {
     if (req.readyState == 4) {
       if (req.status == 200) {
         let datos = req.responseText;
-        canciones = JSON.parse(datos);
-        console.log(canciones);
+        objeto_json = JSON.parse(datos);
+        albumesTotales = objeto_json.albumes;
 
-        canciones.forEach(cancion => {
+        for (let i = 0; i < albumesTotales.length; i++) {
+          let nombre_album = objeto_json.albumes[i].nombreAlbum;
+          console.log(nombre_album);
 
-          let titulo = document.createElement('h3');
-          titulo.innerText = cancion.titulo;
-          document.querySelector("#lista-canciones").appendChild(titulo);
+          var cancionesTotales = objeto_json.albumes[i].canciones;
 
-          titulo.addEventListener("click", () => {
+          for (let j = 0; j < cancionesTotales.length; j++) {
+            var nombre_cancion = cancionesTotales[j].titulo;
 
-            cargarCancion(cancion.id);
-          })
+            let titulo = document.createElement('h3');
+            titulo.innerText = nombre_cancion;
+            document.querySelector("#lista-canciones").appendChild(titulo);
+
+          }
+        }
+
+        titulo.addEventListener("click", () => {
+
+          cargarCancion(cancion.id);
+
 
         });
       }
