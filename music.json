@@ -2,10 +2,10 @@
     "artista": "Eminem",
     "albumes": [
         {
-            "NombreAlbum": "Curtain Call",
-            "Año": "2005",
-            "ImgAlbum": "disc3.jpg",
-            "Canciones": [
+            "nombreAlbum": "Curtain Call",
+            "agno": "2005",
+            "imgAlbum": "disc3.jpg",
+            "canciones": [
                 {
                     "id": 0,
                     "titulo": "Intro",
@@ -59,10 +59,10 @@
             ]
         },
         {
-            "NombreAlbum": "Encore",
-            "Año": "2004",
-            "ImgAlbum": "disc2.jpg",
-            "Canciones": [
+            "nombreAlbum": "Encore",
+            "agno": "2004",
+            "imgAlbum": "disc2.jpg",
+            "canciones": [
                 {
                     "id": 0,
                     "titulo": "Curtains Up",
@@ -116,10 +116,10 @@
             ]
         },
         {
-            "NombreAlbum": "The Eminem Show",
-            "Año": "2002",
-            "ImgAlbum": "disc1.jpg",
-            "Canciones": [
+            "nombreAlbum": "The Eminem Show",
+            "agno": "2002",
+            "imgAlbum": "disc1.jpg",
+            "canciones": [
                 {
                     "id": 0,
                     "titulo": "Curtains Up",
@@ -173,10 +173,10 @@
             ]
         },
         {
-            "NombreAlbum": "The Slim Shady",
-            "Año": "2000",
-            "ImgAlbum": "disc4.jpg",
-            "Canciones": [
+            "nombreAlbum": "The Slim Shady",
+            "agno": "2000",
+            "umgAlbum": "disc4.jpg",
+            "canciones": [
                 {
                     "id": 0,
                     "titulo": "Public Service Announcement",
