@@ -130,7 +130,7 @@ function cargar(){
         reproductor.volume = document.querySelector('#volumen').value;
         console.log('cambiando...')
     });
-    //CAMBIO DE BARRA DE SONIDO EVENTO
+    //CAMBIO DE BARRA DE TIEMPO EVENTO
     document.querySelector('#barra').addEventListener('change', function(){
         reproductor.currentTime = document.querySelector('#barra').value;
         console.log('cambiando...')
