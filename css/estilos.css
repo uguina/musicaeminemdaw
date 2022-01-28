@@ -66,6 +66,7 @@ img {
   visibility: visible;
 }
 
+      
 .hover10 img {
   -webkit-filter: blur(0);
   filter: grayscale(0) blur(0);
