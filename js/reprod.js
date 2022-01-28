@@ -24,18 +24,22 @@ function cargarAjax() {
         document.querySelector('#disc1').addEventListener("click", () => {
           album_actual= 0;
           cargaralbum(album_actual);
+          $.scrollTo(".contenedor");
         })
         document.querySelector('#disc2').addEventListener("click", () => {
           album_actual= 1;
           cargaralbum(album_actual);
+          $.scrollTo(".contenedor");
         })
         document.querySelector('#disc3').addEventListener("click", () => {
           album_actual= 2;
           cargaralbum(album_actual);
+          $.scrollTo(".contenedor");
         })
         document.querySelector('#disc4').addEventListener("click", () => {
           album_actual= 3;
           cargaralbum(album_actual);
+          $.scrollTo(".contenedor");
         })
         function cargaralbum(album_actual){
           document.querySelector("#lista-canciones").innerHTML=""
@@ -58,11 +62,7 @@ function cargarAjax() {
            });
           }
         }
-        /*for (let i = 0; i < albumesTotales.length; i++) {
-          
-          }
-          */
-
+        
       }
     }
   }
