@@ -22,7 +22,7 @@ function cargarAjax() {
         objeto_json = JSON.parse(datos);
         albumesTotales = objeto_json.albumes;
         document.querySelector('#disc1').addEventListener("click", () => {
-          album_actual= 0;
+          album_actual= 2;
           cargaralbum(album_actual);
           $.scrollTo(".contenedor");
         })
@@ -32,7 +32,7 @@ function cargarAjax() {
           $.scrollTo(".contenedor");
         })
         document.querySelector('#disc3').addEventListener("click", () => {
-          album_actual= 2;
+          album_actual= 0;
           cargaralbum(album_actual);
           $.scrollTo(".contenedor");
         })
