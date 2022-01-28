@@ -48,10 +48,8 @@ img{
           top: 55%;
           left: 50%;
           transform: translate(-50%, -50%);
-          p{
-            text-align: center;
-            font-size: 25px;
-            text-shadow: #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 50px, 22px -28px 6px rgba(70,112,179,0.07);
+          .play{
+            margin-bottom: 15px;
           }
       }
       &:hover{

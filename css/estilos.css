@@ -56,10 +56,8 @@ img {
           transform: translate(-50%, -50%);
 }
 
-.discs .disc .centrado p {
-  text-align: center;
-  font-size: 25px;
-  text-shadow: #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 50px, 22px -28px 6px rgba(70, 112, 179, 0.07);
+.discs .disc .centrado .play {
+  margin-bottom: 15px;
 }
 
 .discs .disc:hover .centrado {
