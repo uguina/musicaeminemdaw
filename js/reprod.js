@@ -41,21 +41,25 @@ function cargarAjax() {
           cargaralbum(album_actual);
           $.scrollTo(".contenedor");
         })
+        
         function cargaralbum(album_actual){
           document.querySelector("#lista-canciones").innerHTML=""
           let nombre_album = objeto_json.albumes[album_actual].nombreAlbum;
           let img_album = objeto_json.albumes[album_actual].imgAlbum;
-
+          document.querySelector('.player__song').innerHTML= nombre_album;
+          document.querySelector('.player__img').src= "./img/"+ img_album;
           var cancionesTotales = objeto_json.albumes[album_actual].canciones;
           console.log(objeto_json.albumes[album_actual]);
 
           for (let j = 0; j < cancionesTotales.length; j++) {
             var nombre_cancion = cancionesTotales[j].titulo;
             
-            let titulo = document.createElement('h3');
+            let titulo = document.createElement('h2');
+            let caja = document.createElement('div');
             titulo.innerText = nombre_cancion;
-            document.querySelector("#lista-canciones").appendChild(titulo);
-            
+            caja.appendChild(titulo);
+            caja.classList.add('cajacancion');
+            document.querySelector("#lista-canciones").appendChild(caja);
             titulo.addEventListener("click", () => {
               cargarCancion(cancionesTotales[j].id, nombre_album,cancionesTotales[j].cancion,cancionesTotales[j].titulo,img_album);
    
@@ -69,13 +73,12 @@ function cargarAjax() {
 }
 
 let reproductor = document.querySelector('#track');
-function cargarCancion(id,nombre__album,source,titulo__cancion,img__album) {
+function cargarCancion(id,source,titulo__cancion) {
   
   document.querySelector('.player__song').innerHTML= nombre__album;
   document.querySelector('.player__albumTitle').innerHTML= titulo__cancion;
-  document.querySelector('.player__img').src= "./img/"+ img__album;
-
-
+  
+  
   
   
   reproductor.src = "./audio/" + nombre__album +"/"+ source;
@@ -83,9 +86,8 @@ function cargarCancion(id,nombre__album,source,titulo__cancion,img__album) {
   reproductor.play();
 
   reproductor.addEventListener('timeupdate', function () {
-    document.querySelector('#barra').value = reproductor.currentTime;
-
-    document.querySelector('#barra').max = reproductor.duration;
+    document.querySelector('.start').value = reproductor.currentTime;
+    document.querySelector('.end').max = reproductor.duration;
   });
 
   reproductor.addEventListener('ended', () => {
