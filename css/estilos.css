@@ -3,7 +3,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
-  background-color: #08082c;
+  background-color: #030313;
 }
 
 img {
@@ -23,7 +23,7 @@ img {
 }
 
 .cont {
-  background-color: #08082c;
+  background-color: #030313;
   padding: 50px;
   width: 80%;
   border-radius: 15px;
@@ -66,7 +66,6 @@ img {
   visibility: visible;
 }
 
-      
 .hover10 img {
   -webkit-filter: blur(0);
   filter: grayscale(0) blur(0);
