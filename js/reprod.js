@@ -4,6 +4,7 @@ const next = document.querySelector('#next');
 const play = document.querySelector('#play').addEventListener('click', reproducir);;
 const pause = document.querySelector('#pause').addEventListener('click', pausar);;
 var titulo = [];
+let id=[];
 var albumesTotales= [];
 var album_actual= 0
 var cancionesTotales = [];
@@ -62,7 +63,7 @@ function cargarAjax() {
             caja.classList.add('cajacancion');
             document.querySelector("#lista-canciones").appendChild(caja);
             titulo.addEventListener("click", () => {
-            cargarCancion(cancionesTotales[j].id,);
+            cargarCancion(cancionesTotales[j].id);
    
            });
           }
@@ -101,7 +102,8 @@ function cargarCancion(id,) {
 }
 
 function cargar() {
-
+  document.querySelector("#play").style.display="inline";
+  document.querySelector("#pause").style.display="none";
   document.querySelector('#play').addEventListener('click', reproducir);
   document.querySelector('#pause').addEventListener('click', pausar);
 
@@ -112,15 +114,21 @@ function cargar() {
 
 }
 
-function reproducir() {
+function reproducir(){
+  //IF QUE COMPURBA SI HAY ALGUNA CANCION CARGADA, EN SU DEFECTO REPRODUCE LA PRIMERA 
+  //CANCION DE LA PLAYLIST
+  //FUNCION DE REPRODUCCION
   console.log('sonando');
   reproductor.play();
-
+  document.querySelector("#pause").style.display="inline";
+  document.querySelector("#play").style.display="none";
 }
-
-function pausar() {
+//BOTON DE PAUSA FUNCION
+function pausar(){
   console.log('pausando');
   reproductor.pause();
+  document.querySelector("#play").style.display="inline";
+  document.querySelector("#pause").style.display="none";
 }
 
 
