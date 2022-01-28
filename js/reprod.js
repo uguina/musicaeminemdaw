@@ -5,6 +5,7 @@ const play = document.querySelector('#play').addEventListener('click', reproduci
 const pause = document.querySelector('#pause').addEventListener('click', pausar);;
 var titulo = [];
 var albumesTotales= [];
+var album_actual= 0
 
 
 window.onload = cargarAjax;
@@ -20,27 +21,47 @@ function cargarAjax() {
         let datos = req.responseText;
         objeto_json = JSON.parse(datos);
         albumesTotales = objeto_json.albumes;
+        document.querySelector('#disc1').addEventListener("click", () => {
+          album_actual= 0;
+          cargaralbum(album_actual);
+        })
+        document.querySelector('#disc2').addEventListener("click", () => {
+          album_actual= 1;
+          cargaralbum(album_actual);
+        })
+        document.querySelector('#disc3').addEventListener("click", () => {
+          album_actual= 2;
+          cargaralbum(album_actual);
+        })
+        document.querySelector('#disc4').addEventListener("click", () => {
+          album_actual= 3;
+          cargaralbum(album_actual);
+        })
+        function cargaralbum(album_actual){
+          document.querySelector("#lista-canciones").innerHTML=""
+          let nombre_album = objeto_json.albumes[album_actual].nombreAlbum;
+          let img_album = objeto_json.albumes[album_actual].imgAlbum;
 
-        for (let i = 0; i < albumesTotales.length; i++) {
-          let nombre_album = objeto_json.albumes[i].nombreAlbum;
-          let img_album = objeto_json.albumes[i].imgAlbum;
-
-          var cancionesTotales = objeto_json.albumes[i].canciones;
+          var cancionesTotales = objeto_json.albumes[album_actual].canciones;
+          console.log(objeto_json.albumes[album_actual]);
 
           for (let j = 0; j < cancionesTotales.length; j++) {
             var nombre_cancion = cancionesTotales[j].titulo;
-
+            
             let titulo = document.createElement('h3');
             titulo.innerText = nombre_cancion;
             document.querySelector("#lista-canciones").appendChild(titulo);
             
             titulo.addEventListener("click", () => {
-
               cargarCancion(cancionesTotales[j].id, nombre_album,cancionesTotales[j].cancion,cancionesTotales[j].titulo,img_album);
    
            });
           }
         }
+        /*for (let i = 0; i < albumesTotales.length; i++) {
+          
+          }
+          */
 
       }
     }
@@ -50,8 +71,8 @@ function cargarAjax() {
 let reproductor = document.querySelector('#track');
 function cargarCancion(id,nombre__album,source,titulo__cancion,img__album) {
   
-  document.querySelector('.player__albumTitle').innerHTML= nombre__album;
-  document.querySelector('.player__song').innerHTML= titulo__cancion;
+  document.querySelector('.player__song').innerHTML= nombre__album;
+  document.querySelector('.player__albumTitle').innerHTML= titulo__cancion;
   document.querySelector('.player__img').src= "./img/"+ img__album;
 
 
