@@ -181,6 +181,7 @@ img {
   cursor: pointer; }
 
 .cajacancion:hover {
-  background-color: #d7dbdd; }
+  background-color: #d7dbdd;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=estilos.css.map */
