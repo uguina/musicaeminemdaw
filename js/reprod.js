@@ -54,7 +54,7 @@ function cargarAjax() {
           for (let j = 0; j < cancionesTotales.length; j++) {
             var nombre_cancion = cancionesTotales[j].titulo;
             
-            let titulo = document.createElement('h2');
+            let titulo = document.createElement('h3');
             let caja = document.createElement('div');
             titulo.innerText = nombre_cancion;
             caja.appendChild(titulo);

@@ -5,6 +5,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
+    background-color: rgb(8, 8, 44);
 }
 
 img{
@@ -21,6 +22,14 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     
+}
+
+.cont{
+  background-color: rgb(8, 8, 44);
+  padding: 50px;
+  width: 80%;
+  border-radius: 15px;
+  margin:auto;
 }
 
 .discs{
@@ -83,6 +92,7 @@ img{
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
+  border-radius: 15px;
 }
 
 .player{
@@ -221,7 +231,7 @@ img{
   opacity: 0.2;
 }
 .cajacancion{
-  padding: 2%;
+  padding: 1%;
   margin-left: 40px;
   width: 500px;
   cursor:pointer;
