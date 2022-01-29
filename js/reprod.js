@@ -6,11 +6,7 @@ var album_actual= 0
 var cancionesTotales = [];
 let rand=false;
 let loop=false;
-<<<<<<< HEAD
-=======
-document.querySelector("#pause").style.display="none";
-document.querySelector("#play").style.display="inline";
->>>>>>> 55f690f3904e613edaca30c24ff72d1929b53501
+
 
 window.onload = cargarAjax;
 
