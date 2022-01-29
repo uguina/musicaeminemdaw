@@ -57,11 +57,11 @@
     <div class="contenedor">
       <div class="player">
         <div class="player__controls">
-          <div class="player__btn player__btn--small">
+          <div class="player__btn player__btn--small" id="loop">
             <i class="fas fa-undo"></i>
           </div>
           <h5 class="player__title">playing now</h5>
-          <div class="player__btn player__btn--small">
+          <div class="player__btn player__btn--small" id="rand">
             <i class="fas fa-random"></i>
           </div>
         </div>
@@ -82,7 +82,7 @@
         <audio class="player__audio" controls id="track" src=""></audio>
 
         <div class="player__controls">
-          <div class="player__btn player__btn--medium" id="previous">
+          <div class="player__btn player__btn--medium" id="prev">
             <i class="fas fa-backward"></i>
           </div>
 
@@ -91,6 +91,8 @@
             <i class="fas fa-pause pause-btn" id="pause"></i>
             <i class="fas fa-play play-btn" id="play"></i>
           </div>
+
+
 
           <div class="player__btn player__btn--medium" id="next">
             <i class="fas fa-forward"></i>

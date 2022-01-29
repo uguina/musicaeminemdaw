@@ -8,11 +8,15 @@ let id=[];
 var albumesTotales= [];
 var album_actual= 0
 var cancionesTotales = [];
-
+let rand=false;
+let loop=false;
+document.querySelector("#pause").style.display="inline";
+document.querySelector("#play").style.display="none";
 
 window.onload = cargarAjax;
 
 function cargarAjax() {
+  
   cargar();
   var req = new XMLHttpRequest();
   req.open('GET', 'music.json', true);
@@ -75,8 +79,12 @@ function cargarAjax() {
 }
 
 let reproductor = document.querySelector('#track');
-function cargarCancion(id,) {
-  let titulo__cancion = cancionesTotales[id].titulo
+function cargarCancion(id) {
+  document.querySelector("#pause").style.display="inline";
+  document.querySelector("#play").style.display="none";
+  console.log(id);
+  console.log(cancionesTotales[3].titulo);
+  let titulo__cancion = cancionesTotales[id].titulo;
   let nombre__album = objeto_json.albumes[album_actual].nombreAlbum;
   let source= cancionesTotales[id].cancion;
   document.querySelector('.player__albumTitle').innerHTML= titulo__cancion;
@@ -90,22 +98,76 @@ function cargarCancion(id,) {
 });
 
   reproductor.addEventListener('ended', () => {
-
-    if (id == canciones.length - 1) {
-      id = 0;
+    
+    if (loop==true) {
       cargarCancion(id);
-    } else {
-      cargarCancion(++id);
-    }
-
+  }else{
+      if(rand==true){
+          var randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
+          id=randnum;
+          console.log("en random es"+id);
+          cargarCancion(id);
+      }else{
+          console.log("de normal es"+id);
+          if (id == cancionesTotales.length - 1) {
+            id = 0;
+            cargarCancion(id);
+          } else {
+            cargarCancion(++id);
+          }
+      };
+  };
   });
+  document.querySelector('#next').addEventListener('click', ()=>{
+    console.log("cargar siguiente");
+    if(rand==true){
+        var randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
+        while(id=randnum){
+          var randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
+        }
+        id=randnum;
+        console.log("en random es"+id);
+        cargarCancion(id);
+    }else{
+        console.log("de normal es"+id);
+        if(id==cancionesTotales.length-1){
+            id=0;
+            cargarCancion(id);
+        }else{
+            cargarCancion(++id);
+        }
+    };
+  });
+  document.querySelector('#prev').addEventListener('click', ()=>{
+    console.log("cargar anterior");
+    if(rand==true){
+        var randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
+        while(id=randnum){
+          var randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
+        }
+        id=randnum;
+        console.log("en random es"+id);
+        cargarCancion(id);
+    }else{
+        if(id==0){
+            id=cancionesTotales.length-1;
+            cargarCancion(id);
+        }
+        else{
+            cargarCancion(--id);
+        }
+    };
+    
+    
+});
 }
 
 function cargar() {
-  document.querySelector("#play").style.display="inline";
-  document.querySelector("#pause").style.display="none";
+  
   document.querySelector('#play').addEventListener('click', reproducir);
   document.querySelector('#pause').addEventListener('click', pausar);
+  document.querySelector('#rand').addEventListener('click', aleatorio);
+  document.querySelector('#loop').addEventListener('click', loopear);
 
   document.querySelector('#barra').addEventListener('change', function () {
     reproductor.currentTime = document.querySelector('#barra').value;
@@ -113,11 +175,25 @@ function cargar() {
   });
 
 }
-
+function loopear(){
+  if (loop==true) {
+      loop=false
+      
+  }else{
+      loop=true
+  }
+  console.log(loop);
+}
+function aleatorio(){
+  if (rand==true) {
+      rand=false
+      
+  }else{
+      rand=true
+  }
+  console.log(rand);
+}
 function reproducir(){
-  //IF QUE COMPURBA SI HAY ALGUNA CANCION CARGADA, EN SU DEFECTO REPRODUCE LA PRIMERA 
-  //CANCION DE LA PLAYLIST
-  //FUNCION DE REPRODUCCION
   console.log('sonando');
   reproductor.play();
   document.querySelector("#pause").style.display="inline";
