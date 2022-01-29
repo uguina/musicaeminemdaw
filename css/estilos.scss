@@ -221,10 +221,6 @@ img{
   min-width: 70px;
 }
 
-.blue {
-  background-color: #e0e5ec;
-  color: rgb(87, 87, 87);
-}
 
 .logoII{
   opacity: 0.2;
@@ -239,4 +235,17 @@ img{
 .cajacancion:hover{
   background-color: #d7dbdd;
   border-radius: 10px;
+}
+
+.active{
+  background-color: blue;
+}
+
+.play-btn, .pause-btn{
+  width: 60px;
+  opacity: 0.5;
+}
+
+.hiden{
+  display: none;
 }

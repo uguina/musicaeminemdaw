@@ -1,8 +1,4 @@
 
-const previous = document.querySelector('#previous');
-const next = document.querySelector('#next');
-const play = document.querySelector('#play').addEventListener('click', reproducir);;
-const pause = document.querySelector('#pause').addEventListener('click', pausar);;
 var titulo = [];
 let id=[];
 var albumesTotales= [];
@@ -10,8 +6,6 @@ var album_actual= 0
 var cancionesTotales = [];
 let rand=false;
 let loop=false;
-document.querySelector("#pause").style.display="inline";
-document.querySelector("#play").style.display="none";
 
 window.onload = cargarAjax;
 
@@ -80,17 +74,21 @@ function cargarAjax() {
 
 let reproductor = document.querySelector('#track');
 function cargarCancion(id) {
-  document.querySelector("#pause").style.display="inline";
-  document.querySelector("#play").style.display="none";
   console.log(id);
   console.log(cancionesTotales[3].titulo);
   let titulo__cancion = cancionesTotales[id].titulo;
   let nombre__album = objeto_json.albumes[album_actual].nombreAlbum;
   let source= cancionesTotales[id].cancion;
+  let playPause= document.querySelector('#play-pause');
+  let play= document.querySelector('.play-btn');
+  let pause= document.querySelector('.pause-btn');
   document.querySelector('.player__albumTitle').innerHTML= titulo__cancion;
   reproductor.src = "./audio/" + nombre__album +"/"+ source;
   console.log(nombre__album +"/"+ source);
   reproductor.play();
+  playPause.classList.add("active");
+  pause.classList.remove("hiden");
+  play.classList.add("hiden");
 
   reproductor.addEventListener('timeupdate', function(){
     document.querySelector('#barra').value= reproductor.currentTime;
@@ -163,9 +161,9 @@ function cargarCancion(id) {
 }
 
 function cargar() {
-  
-  document.querySelector('#play').addEventListener('click', reproducir);
-  document.querySelector('#pause').addEventListener('click', pausar);
+  window.scrollTo(0,200);  
+
+  document.querySelector('#play-pause').addEventListener('click', reproducir);
   document.querySelector('#rand').addEventListener('click', aleatorio);
   document.querySelector('#loop').addEventListener('click', loopear);
 
@@ -177,35 +175,48 @@ function cargar() {
 }
 function loopear(){
   if (loop==true) {
-      loop=false
+      loop=false;
+      document.querySelector("#loop").classList.remove("active");
       
   }else{
-      loop=true
+      loop=true;
+      document.querySelector("#loop").classList.add("active");
   }
   console.log(loop);
 }
 function aleatorio(){
   if (rand==true) {
-      rand=false
-      
+      rand=false;
+      document.querySelector("#rand").classList.remove("active");
   }else{
-      rand=true
+      rand=true;
+      document.querySelector("#rand").classList.add("active");
   }
   console.log(rand);
 }
+
+//REPRODUCIR Y PAUSAR
 function reproducir(){
   console.log('sonando');
-  reproductor.play();
-  document.querySelector("#pause").style.display="inline";
-  document.querySelector("#play").style.display="none";
+  let playPause= document.querySelector('#play-pause');
+  let play= document.querySelector('.play-btn');
+  let pause= document.querySelector('.pause-btn');
+  playPause.classList.remove("active");
+  pause.classList.add("hiden");
+  play.classList.remove("hiden");
+
+  if(reproductor.paused){
+    reproductor.play();
+    playPause.classList.add("active");
+    pause.classList.remove("hiden");
+    play.classList.add("hiden");
+  }else{
+    console.log('pausando')
+    reproductor.pause();
+  }
+
 }
-//BOTON DE PAUSA FUNCION
-function pausar(){
-  console.log('pausando');
-  reproductor.pause();
-  document.querySelector("#play").style.display="inline";
-  document.querySelector("#pause").style.display="none";
-}
+
 
 
 
