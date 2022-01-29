@@ -283,4 +283,13 @@ img {
   padding: 5px;
   border-radius: 8px;
 }
+
+.up {
+  position: absolute;
+  right: 0;
+  margin-right: 8%;
+  background-color: #e0e5ec;
+  padding: 20px;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=estilos.css.map */
