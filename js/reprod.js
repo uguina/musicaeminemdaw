@@ -10,8 +10,8 @@ var album_actual= 0
 var cancionesTotales = [];
 let rand=false;
 let loop=false;
-document.querySelector("#pause").style.display="inline";
-document.querySelector("#play").style.display="none";
+document.querySelector("#pause").style.display="none";
+document.querySelector("#play").style.display="inline";
 
 window.onload = cargarAjax;
 
