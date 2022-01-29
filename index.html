@@ -86,7 +86,7 @@
             <i class="fas fa-backward"></i>
           </div>
 
-          
+
           <div class="player__btn player__btn--medium" id="play-pause">
             <img src="img/media-play.png" class="play-btn" alt="">
             <img src="img/media-pause.png" class="pause-btn hiden" alt="">
@@ -98,6 +98,12 @@
             <i class="fas fa-forward"></i>
           </div>
         </div>
+        <div>
+          <img class="vol mute hiden" src="img/mute.png" alt="">
+          <img class="vol vol-min" src="img/volMin.png" alt="">
+          <input type="range" value="1" id="volumen" step="any" min="0" max="1" class="player__volume">
+          <img class="vol vol-max" src="img/volMax.png" alt="">
+        </div>
       </div>
       <div id="lista-canciones">
       </div>
@@ -108,8 +114,8 @@
   <script src="js/reprod.js"></script>
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    
-  </script>
+
+    </script>
 </body>
 
 </html>

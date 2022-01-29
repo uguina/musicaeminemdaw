@@ -253,10 +253,6 @@ img {
   min-width: 70px;
 }
 
-.logoII {
-  opacity: 0.2;
-}
-
 .cajacancion {
   padding: 1%;
   margin-left: 40px;
@@ -270,7 +266,7 @@ img {
 }
 
 .active {
-  background-color: blue;
+  background-color: #43b1e2;
 }
 
 .play-btn, .pause-btn {
@@ -280,5 +276,11 @@ img {
 
 .hiden {
   display: none;
+}
+
+.vol {
+  background-color: #b4babd;
+  padding: 5px;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=estilos.css.map */

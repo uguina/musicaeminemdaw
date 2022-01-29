@@ -168,6 +168,23 @@ function cargar() {
   document.querySelector('#rand').addEventListener('click', aleatorio);
   document.querySelector('#loop').addEventListener('click', loopear);
 
+  document.querySelector('#volumen').addEventListener('change', function(){
+    reproductor.volume = document.querySelector('#volumen').value;
+    if(reproductor.volume==0){
+      document.querySelector('.vol-min').classList.add('hiden');
+      document.querySelector('.mute').classList.remove('hiden');
+    }else{
+      document.querySelector('.mute').classList.add('hiden');
+      document.querySelector('.vol-min').classList.remove('hiden');
+    }
+
+    if(reproductor.volume==1 || reproductor.volume==0){
+      document.querySelector('.vol-max').classList.add('hiden');
+    }else{
+      document.querySelector('.vol-max').classList.remove('hiden');
+    }
+});
+
   document.querySelector('#barra').addEventListener('change', function () {
     reproductor.currentTime = document.querySelector('#barra').value;
 
