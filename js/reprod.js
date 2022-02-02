@@ -6,7 +6,7 @@ var album_actual= 0
 var cancionesTotales = [];
 let rand=false;
 let loop=false;
-
+let randnum= 0;
 
 window.onload = cargarAjax;
 
@@ -102,7 +102,7 @@ function cargarCancion(id) {
       cargarCancion(id);
   }else{
       if(rand==true){
-          var randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
+          randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
           id = randnum;
           console.log("en random es"+id);
           cargarCancion(id);
@@ -120,8 +120,8 @@ function cargarCancion(id) {
   document.querySelector('#next').addEventListener('click', ()=>{
     console.log("cargar siguiente");
     if(rand==true){
-        var randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
-        while(id=randnum){
+        randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
+        while(id==randnum){
           randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
         }
         id=randnum;
