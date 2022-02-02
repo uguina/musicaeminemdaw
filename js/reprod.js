@@ -94,7 +94,7 @@ function cargarCancion(id) {
   reproductor.addEventListener('timeupdate', function(){
     document.querySelector('#barra').value= reproductor.currentTime;
     document.querySelector('#barra').max=reproductor.duration;
-});
+  });
 
   reproductor.addEventListener('ended', () => {
     
@@ -103,7 +103,7 @@ function cargarCancion(id) {
   }else{
       if(rand==true){
           var randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
-          id=randnum;
+          id = randnum;
           console.log("en random es"+id);
           cargarCancion(id);
       }else{
@@ -122,7 +122,7 @@ function cargarCancion(id) {
     if(rand==true){
         var randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
         while(id=randnum){
-          var randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
+          randnum = Math.floor(Math.random() * (cancionesTotales.length - 0)) + 0;
         }
         id=randnum;
         console.log("en random es"+id);
